@@ -1,0 +1,16 @@
+-Criação do banco de dados
+CREATE DATABASE IF NOT EXISTS academia;
+USE academia;
+
+-Criação da tabela Alunos
+CREATE TABLE IF NOT EXISTS Alunos (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Nome VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL
+);
+
+-exemplo (opcional)
+INSERT INTO Alunos (Nome, Email) VALUES
+('João da Silva', 'joao@email.com'),
+('Maria Oliveira', 'maria@email.com'),
+('Carlos Souza', 'carlos@email.com');
