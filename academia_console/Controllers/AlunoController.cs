@@ -1,9 +1,13 @@
 ﻿using academia_console.Data;
 using academia_console.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-namespace ConsoleAcademia.Controllers
+namespace academia_console.Controllers
 {
-    public class AlunoController
+    [ApiController]
+    [Route("api/[controller]")]
+    public class AlunoController : ControllerBase
     {
         private readonly AcademiaContext _context;
 
@@ -11,50 +15,49 @@ namespace ConsoleAcademia.Controllers
         {
             _context = context;
         }
-
-        public void CriarAluno(string nome, string email)
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Aluno>>> GetAlunos()
         {
-            var aluno = new Aluno { Nome = nome, Email = email };
+            return await _context.Alunos.ToListAsync();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Aluno>> GetAluno(int id)
+        {
+            var aluno = await _context.Alunos.FindAsync(id);
+            if (aluno == null) return NotFound();
+            return aluno;
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<Aluno>> PostAluno(Aluno aluno)
+        {
             _context.Alunos.Add(aluno);
-            _context.SaveChanges();
-            Console.WriteLine("Aluno cadastrado com sucesso!");
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetAluno), new { id = aluno.Id }, aluno);
         }
 
-        public void ListarAlunos()
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutAluno(int id, Aluno aluno)
         {
-            var alunos = _context.Alunos.ToList();
-            Console.WriteLine("Lista de Alunos:");
-            foreach (var aluno in alunos)
-                Console.WriteLine($"{aluno.Id} - {aluno.Nome} ({aluno.Email})");
+            if (id != aluno.Id) return BadRequest();
+
+            _context.Entry(aluno).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
 
-        public void AtualizarAluno(int id, string novoNome, string novoEmail)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteAluno(int id)
         {
-            var aluno = _context.Alunos.Find(id);
-            if (aluno == null)
-            {
-                Console.WriteLine("Aluno não encontrado.");
-                return;
-            }
-
-            aluno.Nome = novoNome;
-            aluno.Email = novoEmail;
-            _context.SaveChanges();
-            Console.WriteLine("Aluno atualizado com sucesso!");
-        }
-
-        public void ExcluirAluno(int id)
-        {
-            var aluno = _context.Alunos.Find(id);
-            if (aluno == null)
-            {
-                Console.WriteLine("Aluno não encontrado.");
-                return;
-            }
+            var aluno = await _context.Alunos.FindAsync(id);
+            if (aluno == null) return NotFound();
 
             _context.Alunos.Remove(aluno);
-            _context.SaveChanges();
-            Console.WriteLine("Aluno removido com sucesso!");
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }

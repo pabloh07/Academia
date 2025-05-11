@@ -1,60 +1,41 @@
-using ConsoleAcademia.Controllers;
-using Microsoft.Extensions.Configuration;
-using academia_console.Data;
+var builder = WebApplication.CreateBuilder(args);
 
-// Carrega config
-var config = new ConfigurationBuilder()
-    .AddJsonFile("appsettings.json")
-    .Build();
+// Add services to the container.
+// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+builder.Services.AddOpenApi();
 
-string connectionString = config.GetConnectionString("DefaultConnection");
+var app = builder.Build();
 
-// Cria contexto e garante banco criado
-using var context = new AcademiaContext(connectionString);
-context.Database.EnsureCreated();
-
-var controller = new AlunoController(context);
-
-while (true)
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
 {
-    Console.WriteLine("\n[1] Criar | [2] Listar | [3] Atualizar | [4] Excluir | [0] Sair");
-    var opcao = Console.ReadLine();
+    app.MapOpenApi();
+}
 
-    switch (opcao)
-    {
-        case "1":
-            Console.Write("Nome: ");
-            var nome = Console.ReadLine();
-            Console.Write("Email: ");
-            var email = Console.ReadLine();
-            controller.CriarAluno(nome, email);
-            break;
+app.UseHttpsRedirection();
 
-        case "2":
-            controller.ListarAlunos();
-            break;
+var summaries = new[]
+{
+    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+};
 
-        case "3":
-            Console.Write("ID do aluno: ");
-            int idAtt = int.Parse(Console.ReadLine());
-            Console.Write("Novo nome: ");
-            string nomeAtt = Console.ReadLine();
-            Console.Write("Novo email: ");
-            string emailAtt = Console.ReadLine();
-            controller.AtualizarAluno(idAtt, nomeAtt, emailAtt);
-            break;
+app.MapGet("/weatherforecast", () =>
+{
+    var forecast =  Enumerable.Range(1, 5).Select(index =>
+        new WeatherForecast
+        (
+            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+            Random.Shared.Next(-20, 55),
+            summaries[Random.Shared.Next(summaries.Length)]
+        ))
+        .ToArray();
+    return forecast;
+})
+.WithName("GetWeatherForecast");
 
-        case "4":
-            Console.Write("ID do aluno para excluir: ");
-            int idDel = int.Parse(Console.ReadLine());
-            controller.ExcluirAluno(idDel);
-            break;
+app.Run();
 
-        case "0":
-            return;
-
-        default:
-            Console.WriteLine("Opção inválida.");
-            break;
-    }
+record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+{
+    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }

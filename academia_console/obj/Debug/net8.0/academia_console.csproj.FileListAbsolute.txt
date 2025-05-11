@@ -40,3 +40,12 @@ C:\Users\pablo\Documents\Academia_Github\academia_console\obj\Debug\net8.0\refin
 C:\Users\pablo\Documents\Academia_Github\academia_console\obj\Debug\net8.0\academia_console.pdb
 C:\Users\pablo\Documents\Academia_Github\academia_console\obj\Debug\net8.0\academia_console.genruntimeconfig.cache
 C:\Users\pablo\Documents\Academia_Github\academia_console\obj\Debug\net8.0\ref\academia_console.dll
+C:\Users\pablo\OneDrive - SENAC-SC\Área de Trabalho\Academia-1\academia_console\obj\Debug\net8.0\academia_console.csproj.AssemblyReference.cache
+C:\Users\pablo\OneDrive - SENAC-SC\Área de Trabalho\Academia-1\academia_console\obj\Debug\net8.0\academia_console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pablo\OneDrive - SENAC-SC\Área de Trabalho\Academia-1\academia_console\obj\Debug\net8.0\academia_console.AssemblyInfoInputs.cache
+C:\Users\pablo\OneDrive - SENAC-SC\Área de Trabalho\Academia-1\academia_console\obj\Debug\net8.0\academia_console.AssemblyInfo.cs
+C:\Users\pablo\OneDrive - SENAC-SC\Área de Trabalho\Academia-1\academia_console\obj\Debug\net8.0\academia_console.csproj.CoreCompileInputs.cache
+C:\Users\pablo\OneDrive - SENAC-SC\Área de Trabalho\Academia-1\academia_console\obj\Debug\net8.0\academia_console.sourcelink.json
+C:\Users\pablo\OneDrive - SENAC-SC\Área de Trabalho\Academia-1\academia_console\obj\Debug\net8.0\academia_console.dll
+C:\Users\pablo\OneDrive - SENAC-SC\Área de Trabalho\Academia-1\academia_console\obj\Debug\net8.0\refint\academia_console.dll
+C:\Users\pablo\OneDrive - SENAC-SC\Área de Trabalho\Academia-1\academia_console\obj\Debug\net8.0\academia_console.pdb

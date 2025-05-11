@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pablo\\Documents\\Academia_Github\\academia_console\\academia_console.csproj": {}
+    "C:\\Users\\pablo\\OneDrive - SENAC-SC\\Área de Trabalho\\Academia-1\\academia_console\\academia_console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pablo\\Documents\\Academia_Github\\academia_console\\academia_console.csproj": {
+    "C:\\Users\\pablo\\OneDrive - SENAC-SC\\Área de Trabalho\\Academia-1\\academia_console\\academia_console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pablo\\Documents\\Academia_Github\\academia_console\\academia_console.csproj",
+        "projectUniqueName": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\Área de Trabalho\\Academia-1\\academia_console\\academia_console.csproj",
         "projectName": "academia_console",
-        "projectPath": "C:\\Users\\pablo\\Documents\\Academia_Github\\academia_console\\academia_console.csproj",
+        "projectPath": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\Área de Trabalho\\Academia-1\\academia_console\\academia_console.csproj",
         "packagesPath": "C:\\Users\\pablo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pablo\\Documents\\Academia_Github\\academia_console\\obj\\",
+        "outputPath": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\Área de Trabalho\\Academia-1\\academia_console\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,15 +22,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -47,28 +47,16 @@
         "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.8, )"
-            },
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
               "version": "[9.0.4, )"
-            },
-            "Microsoft.Extensions.Configuration.Json": {
-              "target": "Package",
-              "version": "[9.0.4, )"
-            },
-            "Microsoft.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[9.0.4, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
             }
           },
           "imports": [
@@ -83,6 +71,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

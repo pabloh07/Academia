@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers",
+    "\\Data",
+    "\\Models"
   ],
-  "SelectedNode": "\\academia_console.csproj",
+  "SelectedNode": "\\Controllers\\AlunoController.cs",
   "PreviewInSolutionExplorer": false
 }
