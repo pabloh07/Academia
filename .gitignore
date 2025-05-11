@@ -1,0 +1,25 @@
+# Ignore arquivos do Visual Studio
+.vs/
+.vscode/
+.idea/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Ignore bin e obj, que são pastas de build
+bin/
+obj/
+
+# Ignore arquivos de configuração de pacotes
+*.nupkg
+*.snupkg
+
+# Ignore arquivos do ASP.NET
+appsettings.json
+
+# Ignore arquivos de logs
+*.log
+
+# Ignorar pacotes NuGet baixados
+packages/
