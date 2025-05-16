@@ -5,7 +5,6 @@ namespace academia_console.Models
 {
     public class Aluno
     {
-        [PrimaryKey]
         public int Id { get; set; }
         [Required]
         public string Nome { get; set; }

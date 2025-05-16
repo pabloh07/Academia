@@ -1,5 +1,7 @@
 ﻿using academia_console.Models;
+
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace academia_console.Data
 {
@@ -19,4 +21,14 @@ namespace academia_console.Data
             optionsBuilder.UseMySql(_connectionString, ServerVersion.AutoDetect(_connectionString));
         }
     }
+
+    public class AcademiaContextFactory : IDesignTimeDbContextFactory<AcademiaContext>
+    {
+        public AcademiaContext CreateDbContext(string[] args)
+        {
+            var connectionString = "Server=localhost;Database=academia_console;User=root;Password=12345678;";
+            return new AcademiaContext(connectionString);
+        }
+    }
+
 }
