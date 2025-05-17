@@ -1,0 +1,99 @@
+
+
+.alunos-container {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.alunos-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.alunos-table th, .alunos-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.alunos-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.alunos-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.alunos-table button {
+  margin-right: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.search-bar {
+  margin-bottom: 10px;
+}
+
+.navbar {
+  background-color: #b2b9c1;
+  border-radius: 5px;
+  height: 100px;
+  width: 100%;
+  margin-top: -8px;
+  margin-left: -10px;
+  margin-right: -100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  
+}
+.logo {
+width: 400px;
+  height: 400px;
+  margin-top: -150px;
+  display: block;
+  margin-left: 5px;
+
+}
+.navbar button {
+  background-color: #ff7200;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 50px;
+  margin-top: 25px;
+  padding: 5px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-right: 50px;
+}
+
+.navbar button:hover {
+  background-color: #e65c00;
+}

@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\\u00C1rea de Trabalho\\Academia-1\\academia_console\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|c:\\users\\pablo\\onedrive - senac-sc\\\u00E1rea de trabalho\\academia-1\\academia_console\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|c:\\users\\pablo\\onedrive - senac-sc\\\u00E1rea de trabalho\\academia-1\\academia_console\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|solutionrelative:controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|c:\\users\\pablo\\onedrive - senac-sc\\\u00E1rea de trabalho\\academia-1\\academia_console\\data\\academiacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|solutionrelative:data\\academiacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|c:\\users\\pablo\\onedrive - senac-sc\\\u00E1rea de trabalho\\academia-1\\academia_console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|c:\\users\\pablo\\onedrive - senac-sc\\\u00E1rea de trabalho\\academia-1\\academia_console\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|c:\\users\\pablo\\onedrive - senac-sc\\\u00E1rea de trabalho\\academia-1\\academia_console\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|c:\\users\\pablo\\onedrive - senac-sc\\\u00E1rea de trabalho\\academia-1\\academia_console\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|solutionrelative:models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|c:\\users\\pablo\\onedrive - senac-sc\\\u00E1rea de trabalho\\academia-1\\academia_console\\data\\academiacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|solutionrelative:data\\academiacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|c:\\users\\pablo\\onedrive - senac-sc\\\u00E1rea de trabalho\\academia-1\\academia_console\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|solutionrelative:controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{342931AC-42C5-4145-AE76-891586EC32BA}|academia_console.csproj|c:\\users\\pablo\\onedrive - senac-sc\\\u00E1rea de trabalho\\academia-1\\academia_console\\academia_console.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,20 +58,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\\u00C1rea de Trabalho\\Academia-1\\academia_console\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\\u00C1rea de Trabalho\\Academia-1\\academia_console\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-12T17:47:24.289Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\\u00C1rea de Trabalho\\Academia-1\\academia_console\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -84,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "AcademiaContext.cs",
               "DocumentMoniker": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\\u00C1rea de Trabalho\\Academia-1\\academia_console\\Data\\AcademiaContext.cs",
               "RelativeDocumentMoniker": "Data\\AcademiaContext.cs",
@@ -97,13 +84,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "AlunoController.cs",
               "DocumentMoniker": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\\u00C1rea de Trabalho\\Academia-1\\academia_console\\Controllers\\AlunoController.cs",
               "RelativeDocumentMoniker": "Controllers\\AlunoController.cs",
               "ToolTip": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\\u00C1rea de Trabalho\\Academia-1\\academia_console\\Controllers\\AlunoController.cs",
               "RelativeToolTip": "Controllers\\AlunoController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAwwD4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwDAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T17:42:51.841Z",
               "EditorCaption": ""
@@ -111,6 +98,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\\u00C1rea de Trabalho\\Academia-1\\academia_console\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\\u00C1rea de Trabalho\\Academia-1\\academia_console\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-12T17:47:24.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Aluno.cs",
               "DocumentMoniker": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\\u00C1rea de Trabalho\\Academia-1\\academia_console\\Models\\Aluno.cs",
               "RelativeDocumentMoniker": "Models\\Aluno.cs",
@@ -123,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\pablo\\OneDrive - SENAC-SC\\\u00C1rea de Trabalho\\Academia-1\\academia_console\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
